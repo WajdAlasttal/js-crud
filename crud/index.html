@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>crud demo</title>
+    <!-- font awesome 6 -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- bootstrap 5 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="container w-50 m-auto my-5">
+      <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Course Name</label>
+          <input id="courseName" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Course Category</label>
+          <input id="courseCat" type="text" class="form-control" id="exampleInputPassword1">
+        </div>
+  
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Course Price</label>
+          <input id="coursePrice" type="number" class="form-control" id="exampleInputPassword1">
+        </div>
+  
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Course Description</label>
+          <textarea id="courseDesc" class="form-control" id="exampleInputPassword1"></textarea>
+        </div>
+  
+        <button type="button" id="click" class="btn btn-outline-secondary">Add Course</button>
+        <button type="clear" class="btn btn-outline-secondary">Clear</button>
+        <div class="d-block mt-5">
+          <button id="deleteBtn" type="button" class="btn btn-outline-danger">Delete All</button>
+        </div>
+      </form>
+
+      <table class="table table-striped mt-4">
+        <thead>
+          <tr>
+            <th scope="col">id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Category</th>
+            <th scope="col">Price</th>
+            <th scope="col">Description</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody id="data">
+        </tbody>
+      </table>
+    </div>
+    <!-- custom js -->
+    <script src="js/main.js"></script>
+    <!-- bootstrap 5 -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    
+  </body>
+</html>
